@@ -33,14 +33,14 @@ npm start
 
 ## Endpoints:
 
-### User endpoints (/user):
+### User endpoints (/user/'your desired endpoint'):
 
 - `POST /register` - Register a new user.
 - `POST /login` - User login.
 - `POST /upload` - Upload an assignment.
 - `GET /admins`- fetch all admins
 
-### Admin endpoints (/admin):
+### Admin endpoints (/admin/'your desired endpoint'):
 
 - `POST /register` - Register a new admin.
 - `POST /login` - Admin login.
