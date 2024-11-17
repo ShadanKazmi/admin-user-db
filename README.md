@@ -17,7 +17,7 @@ A web application for managing tasks assigned to administrators by users, built 
 
 ## Installation:
 
-### Install dependencies and set MongoDB route
+### Install dependencies and set MongoDB route in the .env file
 
 ```
 npm install
