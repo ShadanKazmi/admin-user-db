@@ -6,9 +6,10 @@ const Admin = require('../model/admin');
 
 const router = Router();
 
-router.get('/admininfo',async (req,res)=>{
+router.get('/assignments/:adminId',async (req,res)=>{
+    const {adminId} = req.params;
     try {
-        const admin = await Admin.find().populate('acceptedTasks.task'); 
+        const admin = await Admin.findById(adminId).populate('acceptedTasks.task'); 
         res.json(admin);
     } catch (error) {
         console.error('Error retrieving admins:', error);
